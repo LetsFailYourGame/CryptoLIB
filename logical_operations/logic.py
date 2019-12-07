@@ -17,7 +17,7 @@ def convert_hex_to_bin_string(hexVal, out_len=8):
     return f"{hexVal:0>{out_len}b}"
 
 
-def shift_bit(binString, direction, val_to_shift):
+def shift_bit(binString: str, direction: str, val_to_shift: int) -> str:
     """
     @param binString: (str) takes str list as input
     @param direction: (str) { Leftshift: "<<" | Rightshift: ">>" }
