@@ -17,7 +17,13 @@ def convert_hex_to_bin_string(hexVal, out_len=8):
     return f"{hexVal:0>{out_len}b}"
 
 
-def shift_bit(binString, direction, val_to_shift):
+def shift_bit(binString: str, direction: str, val_to_shift: int):
+    """
+    @param binString: Takes binary in str format as input
+    @type direction: (str)  [Leftshift : "<<" | Rightshift : ">>"]
+    @param val_to_shift: Times to shift
+    @return tmp: returns shifted input as str list
+    """
     tmp = []
     if direction == "<<":  # L_Shift
         tmp.append(binString[val_to_shift:])
