@@ -1,4 +1,4 @@
-def xor_binString(binString, binString_, bit_size=8):
+def xor_binString(binString: str, binString_: str, bit_size=8) -> str:
     tmp = []
     for bit in range(0, bit_size):
         sbits = int(binString[bit])
@@ -13,7 +13,7 @@ def xor_binString(binString, binString_, bit_size=8):
     return tmp
 
 
-def convert_hex_to_bin_string(hexVal, out_len=8):
+def convert_hex_to_bin_string(hexVal: str, out_len=8) -> str:
     return f"{hexVal:0>{out_len}b}"
 
 
