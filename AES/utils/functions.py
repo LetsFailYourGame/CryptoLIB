@@ -13,7 +13,7 @@ def convert_4bytes_to_bin_string_matrix(byte_matrix: hex) -> list:
     return tmp_matrix
 
 
-def mix_col(bin_matrix: str) -> list:
+def mix_col(bin_matrix: list) -> list:
     y = []
     px = "00011011"
     for row in range(0, mix_col_matrix.__len__()):
