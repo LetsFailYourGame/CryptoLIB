@@ -23,7 +23,7 @@ aes_sbox = [
 ]
 
 
-def mix_col_get_keys(mix_col_list: list):
+def mix_col_print_keys(mix_col_list: list):
     k = []
     for i in range(0, 15, 4):
         x1 = logic.xor_binString(mix_col_list[i], mix_col_list[i + 1])
@@ -61,7 +61,7 @@ def mix_col(hex_input_list: list) -> list:
     return y
 
 
-def aes_find_in_sbox(binByte: str):
+def aes_find_in_sbox(binByte: str) -> str:
     x = binByte[:4]
     y = binByte[4:]
     hstrx = '%0*X' % ((len(x) + 3) // 4, int(x, 2))

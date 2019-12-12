@@ -11,8 +11,8 @@ cd = [0x23, 0x24, 0x34, 0xF8]
 round_key_1 = convert_hex_to_bin_string(0xF5135F3F89A87757203ED1B212E003F9, 128)
 
 
-all_c_combine = [''.join(aes.mix_col_get_keys(aes.mix_col(ca))), ''.join(aes.mix_col_get_keys(aes.mix_col(cb))),
-                 ''.join(aes.mix_col_get_keys(aes.mix_col(cc))), ''.join(aes.mix_col_get_keys(aes.mix_col(cd)))]
+all_c_combine = [''.join(aes.mix_col_print_keys(aes.mix_col(ca))), ''.join(aes.mix_col_print_keys(aes.mix_col(cb))),
+                 ''.join(aes.mix_col_print_keys(aes.mix_col(cc))), ''.join(aes.mix_col_print_keys(aes.mix_col(cd)))]
 
 all_c_combine = ''.join(all_c_combine)
 
