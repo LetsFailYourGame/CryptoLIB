@@ -13,7 +13,7 @@ def xor_binString(binString: str, binString_: str, bit_size=8) -> str:
     return tmp
 
 
-def convert_hex_to_bin_string(hexVal: str, out_len=8) -> str:
+def convert_hex_to_bin_string(hexVal: hex, out_len=8) -> str:
     return f"{hexVal:0>{out_len}b}"
 
 
