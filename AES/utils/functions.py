@@ -9,7 +9,7 @@ def mix_col_get_keys(mix_col_list: list):
         x1 = logic.xor_binString(mix_col_list[i], mix_col_list[i + 1])
         x2 = logic.xor_binString(mix_col_list[i + 2], mix_col_list[i + 3])
         k.append(logic.xor_binString(x1, x2))
-    return
+    return k
 
 
 def mix_col(hex_input_list: list) -> list:
