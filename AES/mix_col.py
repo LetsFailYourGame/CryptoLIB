@@ -1,7 +1,7 @@
 # Example for calculating mix_col
 import AES.utils.functions as aes
 from logical_operations.logic import convert_hex_to_bin_string
-from logical_operations.logic import xor_binString as xor
+from logical_operations.logic import xor_bin_string as xor
 
 ca = [0x1E, 0xEA, 0x24, 0xB3]
 cb = [0x10, 0x90, 0xB5, 0x9C]
