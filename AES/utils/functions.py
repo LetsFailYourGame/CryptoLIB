@@ -23,7 +23,7 @@ aes_sbox = [
 ]
 
 
-def mix_col_print_keys(mix_col_list: list):
+def mix_col_get_keys(mix_col_list: list):
     k = []
     for i in range(0, 15, 4):
         x1 = logic.xor_binString(mix_col_list[i], mix_col_list[i + 1])
@@ -32,7 +32,7 @@ def mix_col_print_keys(mix_col_list: list):
     return k
 
 
-def mix_col(hex_input_list: list) -> list:
+def generate_mix_col_list(hex_input_list: list) -> list:
     y = []
     px = "00011011"
     tmp_matrix = [
