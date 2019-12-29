@@ -61,9 +61,9 @@ def mix_col(hex_input_list: list) -> list:
     return y
 
 
-def aes_find_in_sbox(binByte: str) -> str:
-    x = binByte[:4]
-    y = binByte[4:]
+def aes_find_in_sbox(bin_byte: str) -> str:
+    x = bin_byte[:4]
+    y = bin_byte[4:]
     hstrx = '%0*X' % ((len(x) + 3) // 4, int(x, 2))
     hstry = '%0*X' % ((len(y) + 3) // 4, int(y, 2))
     posx = 0
